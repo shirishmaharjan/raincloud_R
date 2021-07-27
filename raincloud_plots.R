@@ -58,5 +58,10 @@ ggplot(diamonds, aes(x=cut, y= price)) + geom_boxplot()
 
 # using coord_flip()
 
-ggplot(diamonds, aes(x=cut, y= price, fill= cut)) + geom_boxplot() + coord_flip()
+ggplot(diamonds,
+       aes(x=cut, y= price,
+       fill= cut)) +
+    geom_boxplot() +
+    coord_flip() +
+    theme_bw()
 
