@@ -52,3 +52,11 @@ mpg %>%
     ) +
     coord_flip()
 
+### Coordinate_flip examples
+
+ggplot(diamonds, aes(x=cut, y= price)) + geom_boxplot()
+
+# using coord_flip()
+
+ggplot(diamonds, aes(x=cut, y= price, fill= cut)) + geom_boxplot() + coord_flip()
+
